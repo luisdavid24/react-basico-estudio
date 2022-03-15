@@ -1,4 +1,4 @@
-import { cleanup } from '@testing-library/react';
+// import { cleanup } from '@testing-library/react';
 import React ,{useState,useEffect}from 'react'
 
 export default function ScrollHooks(){
@@ -9,7 +9,7 @@ export default function ScrollHooks(){
         const detectarScroll=()=>{
             setScrolly(window.pageYOffset);
         }
-        window.addEventListener("scroll",detectarScroll);
+        window.addEventListener("scro ll",detectarScroll);
         return()=>{
             window.removeEventListener("scroll",detectarScroll)
             console.log("Fase de Desmontaje");       
