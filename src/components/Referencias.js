@@ -15,20 +15,19 @@ export default function Referencias(){
             e.target.textContent="Menu";
             $menu.style.display="none"
         }*/
-        if(refMenuBtn.current.textContext==="Menu"){
-            refMenuBtn.current.textContent="Cerrar";
-            reffMenu.current.style.display="block";
-        }else{
-            refMenuBtn.current.textContent="Menu";
-            refMenu.current.style.display="none";
-            
+        if (refMenuBtn.current.textContent === "Menú") {
+            refMenuBtn.current.textContent = "Cerrar";
+            refMenu.current.style.display = "block";
+        } else {
+            refMenuBtn.current.textContent = "Menú";
+            refMenu.current.style.display = "none";
         }
     };
     
     return(
      <>
         <h2>Referencias</h2>
-        <button id="menu-btn" ref={refMenuBtn}  onClick={handleToggleMenu}>Menu</button>
+        <button id="menu-btn" ref={refMenuBtn}  onClick={handleToggleMenu}>Menú</button>
         <nav id="menu" ref={refMenu} style={{display:"none"}}>
             <a href="#">Secccion 1</a>
             <br/>
